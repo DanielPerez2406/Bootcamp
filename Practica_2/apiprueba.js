@@ -1,7 +1,7 @@
-const urlBase = "https://localhost:44345/";
+const urlBase = "https://localhost:44345";
 
 const MetodoGet = () => {
-    fetch(`$(urlBase)/api/person/all`)
+    fetch(`${urlBase}/api/person/all`)
     .then(Response => Response.json())
     .then(data => console.log("Metodo Get api", data))
 };
